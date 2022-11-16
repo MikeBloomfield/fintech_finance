@@ -1,0 +1,76 @@
+.footer
+    padding 80px 0 60px
+    background $blue
+    &__menu
+        min-width 260px
+    &__menu-img:last-child
+        margin-left 10px
+    &__menu-img
+        opacity .7
+        &:hover
+            opacity 1
+    &__img-wrapper
+        display flex
+        justify-content: left
+    &__title
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 40px;
+        color: #FFFFFF;
+        margin-bottom 20px
+    &__menu-item
+        &:not(:last-child)
+            margin-bottom 5px
+    &__menu-link
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 35px;
+        color: #9BB3B7;
+        transition: .5s
+        &:hover
+            color: #00C396
+
+    &--green
+        background radial-gradient(47.47% 99.05% at 49.55% 50.08%, #064750 0%, #01212f 100%)
+    &__wrapper
+        display flex
+        align-items top
+        justify-content space-between
+        margin-bottom 76px
+    &__copyright
+        margin-top 30px
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #9BB3B7;
+    &__note 
+        margin-top 30px
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #9BB3B7;
+    &__nav
+        display flex
+        align-items center
+        justify-content center
+        max-width 733px
+        width 100%
+        position relative
+        &:before, &:after
+            content ''
+            position absolute
+            width 10px
+            height 10px
+            border-radius 50%
+            background-color rgba(255,255,255,.2)
+        &:before
+            left 0
+        &:after
+            right 0

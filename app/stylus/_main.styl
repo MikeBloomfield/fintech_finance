@@ -1,0 +1,654 @@
+//main styles
+.main-wrapper
+	padding 0
+	min-width $min-width
+	width 100%
+	position relative
+	overflow hidden
+	min-height 100%
+
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 15px 0 15px
+	margin 0 auto
+	position relative
+
+/* titles */
+p
+	font($base-size, $base-line, $text-color, $custom-font, 400)
+
+h1
+	font($h1-size, $h1-line, $title-color, $custom-font, 600)
+
+h2
+	font($h2-size, $h2-line, $title-color, $custom-font, 600)
+
+h3
+	font($h2-size, $h2-line, $title-color, $custom-font, 600)
+
+/* styles */
+.main
+	min-width $min-width
+	width 100%
+	flex-grow 1
+	position relative
+
+.btns
+	min-width 200px
+	display flex
+	justify-content space-between
+	align-items center
+	&__item
+		margin-right 15px
+
+.title
+	&--center
+		text-align center
+	&--white
+		color $white
+
+.subtitle
+	font-size 20px
+	line-height 30px
+	color $mid-black
+	&--center
+		text-align center
+
+.dropdown
+	&__icon
+		position absolute
+		right 15px
+		width 8px
+		height 5px
+
+.socials
+	min-width 162px
+	display inline-flex
+	align-items center
+	justify-content space-between
+	&__text
+		color rgba( 255,255,255,.5 )
+		font-size 15px
+		line-height 25px
+	&__item
+		&:not(:last-child)
+			margin-right 20px
+
+.btn
+	font-size 20px
+	line-height 40px
+	font-weight 500
+	min-width 225px
+	min-height 60px
+	display inline-flex
+	align-items center
+	justify-content center
+	background-color $white
+	border-radius 8px
+	text-align center
+	color $mid-black
+	&--index-bottom
+		box-shadow 0px 100px 80px rgba(0, 57, 100, 0.16), 0px 41.7776px 33.4221px rgba(0, 57, 100, 0.115017), 0px 22.3363px 17.869px rgba(0, 57, 100, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 57, 100, 0.08), 0px 6.6501px 5.32008px rgba(0, 57, 100, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 57, 100, 0.0449833)
+		background radial-gradient(50% 105.3% at 50% 50%, #00dba8 0%, #0b8965 100%)!important
+		position relative
+		color: #fff
+		z-index: 1
+		&:hover
+			color: #fff
+		&:before
+			background radial-gradient(50% 105.3% at 50% 50%, #00C396 0%, #097254 100%)
+			content "Refer a friend"
+			position absolute
+			top 0 
+			left 0 
+			right 0
+			bottom 0
+			border-radius: 8px
+			display flex
+			align-items: center
+			justify-content: center
+			opacity 1
+			transition: .3s
+			z-index 3
+			color: #fff
+		&:hover:before
+			opacity: 0
+			color: #fff
+	&--blue
+		background-color $blue
+		color $white
+		&:hover
+			color $white
+			background-color #1636b2
+	&--red
+		background-color $red
+		color $white
+		transition: .5s
+		&:hover
+			background-color: hsl(1, 98%, 57%)
+	&--green
+		background-color $green
+		color $white
+	&--dark_green
+		background-color $dark-green
+		color $white
+		&:hover
+			color $white
+			background-color #053339
+	&--mint
+		background-color $mint
+		color $white
+		transition: .5s
+		&:hover
+			background: hsl(166, 100%, 43%)
+			color: #fff
+	&--radial_green
+		background radial-gradient(50% 105.3% at 50% 50%, #00C396 0%, #097254 100%)
+		color $white
+		
+	&--small
+		min-height 35px
+		min-width 90px
+		padding 5px 20px
+		font-size 15px
+		line-height 25px
+	&--shadow
+		box-shadow 0px 100px 80px rgba(0, 57, 100, 0.16), 0px 41.7776px 33.4221px rgba(0, 57, 100, 0.115017), 0px 22.3363px 17.869px rgba(0, 57, 100, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 57, 100, 0.08), 0px 6.6501px 5.32008px rgba(0, 57, 100, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 57, 100, 0.0449833)
+		background radial-gradient(50% 105.3% at 50% 50%, #00dba8 0%, #0b8965 100%)
+		position relative
+		&:before
+			background radial-gradient(50% 105.3% at 50% 50%, #00C396 0%, #097254 100%)
+			content "Start trading"
+			position absolute
+			top 0 
+			left 0 
+			right 0
+			bottom 0
+			border-radius: 8px
+			display flex
+			align-items: center
+			justify-content: center
+			opacity 1
+			transition: .3s
+			z-index 3
+		&:hover
+			box-shadow 0px 110px 100px rgba(0, 57, 100, 0.16), 0px 41.7776px 33.4221px rgba(0, 57, 100, 0.315017), 0px 23363px 17.869px rgba(0, 57, 100, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 57, 100, 0.08), 0px 6.6501px 5.32008px rgba(0, 57, 100, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 57, 100, 0.0449833)
+			color: #fff
+		&:hover:before
+			opacity: 0
+		
+	&--transparent
+		background-color unset
+		border 1px solid rgba(255,255,255,.5)
+		color $white
+		transition: .5s
+		&:hover
+			color #000
+			background: #fff
+	&--font_blue
+		color $blue
+	&--semibold
+		font-weight 600
+	&--table
+		min-width 118px
+		display inline-flex
+		padding 6px 15px
+		font-size 12px
+		line-height 18px
+		font-weight 600
+		border-radius 8px
+		display flex
+		align-items center
+		justify-content center
+		text-transform uppercase
+		cursor pointer
+
+
+
+.tooltip
+	position absolute
+	cursor pointer
+	&:hover
+		.tooltip__text
+			visibility visible
+			opacity 1
+	&__icon
+		border-radius 50%
+		position relative
+		display flex
+		align-items center
+		justify-content center
+		&:before
+			content ''
+			position absolute
+			width 24px
+			height 24px
+			background-color rgba(255, 255, 255, 0.5)
+			box-shadow: 0px 0px 10px rgba(0, 31, 152, 0.5);
+			border-radius 50%
+			z-index 1
+			animation scale 1s linear infinite
+		img
+			position relative
+			z-index 2
+	&__text
+		visibility hidden
+		opacity 0
+		left 5px
+		bottom 5px
+		background-color $white
+		border-radius 5px
+		position absolute
+		font-size 12px
+		line-height 18px
+		color rgba(4, 28, 77, 1)
+		font-weight 50
+		width 250px
+		height auto
+		padding 15px
+		font-family 'Avenir', sans-serif
+		transition $trans
+	&--reverse
+		.tooltip__text
+			left -240px
+			right unset
+	&--1
+		top 41%
+		left 12.5%
+	&--2
+		top 10%
+		left 25%
+		z-index 3
+	&--3
+		top 20%
+		left 42%
+		z-index 2
+	&--4
+		top 18%
+		right 15%
+	&--5
+		bottom 25%
+		right 15%
+		z-index 2
+	&--6
+		bottom 17%
+		right 15%
+		z-index 3
+	&--7
+		bottom 8%
+		right 15%
+		z-index 4
+
+.intro
+	padding 135px 0 145px
+	background-color $blue
+	color $white
+	margin-bottom 128px
+	position relative
+	&--bg
+		background-image url('../img/main/intro-bg.svg')
+		background-size contain
+		background-position center
+		background-repeat no-repeat
+	&--green
+		background-color unset
+		background-image url('../img/main/intro-bg.svg'), $radial-green
+	&__layer
+		max-width 525px
+	&__title
+		margin-bottom 17px
+		color $white
+	&__btn
+		margin-top 35px
+	&-device
+		position absolute
+		img
+			height auto
+		&--desktop
+			max-width 1025px
+			width 100%
+			height 525px
+			bottom 0
+			right -15%
+		&--mobile
+			right 0
+			left 0
+			bottom 7%
+			margin auto
+			max-width 429px
+			width 100%
+			height auto
+
+	p
+		color rgba(255,255,255,.7)
+		font-size 20px
+		line-height 40px
+		&:not(:last-of-type)
+			margin-bottom 5px
+
+.how
+	margin-bottom 85px
+	position relative
+	&:after, &:before
+		content ''
+		position absolute
+		width 100%
+		background-size cover
+		background-repeat no-repeat
+		background-position center
+		z-index -1
+	&:after
+		max-width 780px
+		height 515px
+		background-image url('../img/main/how-right-bg.svg')
+		top -45%
+		right -18%
+	&:before
+		max-width 665px
+		height 410px
+		background-image url('../img/main/how-left-bg.svg')
+		bottom -40%
+		left -37%
+	&__outro
+		padding 25px 15px 35px
+		background-color rgba(34, 79, 255, 0.05)
+		border-radius 20px
+		&--green
+			background-color rgba(6, 71, 80, 0.05)
+	&__title
+		color $black
+		margin-bottom 15px
+	&__items
+		display flex
+		align-items flex-start
+		justify-content space-between
+		max-width 915px
+		width 100%
+		margin 0 auto 20px
+		position relative
+	&-item
+		width calc(33% - 25px)
+		display flex
+		flex-direction column
+		align-items center
+		&:first-child
+			.how-item__text
+				max-width 205px
+		&__title, &__text
+			text-align center
+		&__icon
+			margin-bottom 15px
+			max-width 50px
+			height 70px
+			width 100%
+			margin 0 auto 15px
+			img
+				height 100%
+		&__title
+			color $black
+			font-size 20px
+			line-height 30px
+			margin-bottom 5px
+			font-weight 600
+		&__digit
+			width 40px
+			height 40px
+			border-radius 50%
+			background-color $blue
+			color $white
+			font-size 15px
+			line-height 25px
+			font-weight 700
+			display flex
+			align-items center
+			justify-content center
+			margin-bottom 16px
+			border 5px solid #F4F6FF
+			&--green
+				background-color $dark-green
+				border-color #f3f6f6
+		&__text
+			font-size 15px
+			line-height 25px
+			color rgba(0,0,0,0.7)
+			max-width 250px
+			margin auto
+	&__btn
+		display flex
+		align-items center
+		justify-content center
+	&__line
+		position absolute
+		z-index -1
+		top 46%
+		left 0
+		right 0
+		margin auto
+		max-width 650px
+		width 100%
+
+.platform
+	margin-bottom 85px
+	&__img
+		width 100%
+		max-width 100%
+		position relative
+		.mobile
+			max-width 375px
+			width 100%
+			margin auto
+	&__title
+		margin-bottom 30px
+	
+.exp
+	margin-bottom 50px
+	&__title
+		margin-bottom 15px
+	&__subtitle
+		margin-bottom 37px
+		font-weight 500
+	&__wrapper
+		display flex
+		align-items center
+		justify-content space-between
+		flex-wrap wrap
+	&-traders
+		max-width 250px
+		&--narrow
+			max-width 180px
+		&__item
+			font-weight 300
+	&-profit, &-size
+		max-width 125px
+	&-profit
+		&--narrow
+			max-width 120px
+	&-size
+		font-weight 700
+	&-btn
+		max-width 118px
+	&-rate
+		max-width 70px
+		font-weight 300
+	&-profit
+		font-weight 700
+		color $green
+		&--mint
+			color $mint
+	&-trade-size
+		max-width 245px
+		font-weight 600
+		&--narrow
+			max-width 130px
+	&-trade-size
+		.ui.selection.dropdown
+			padding 5px 15px
+			display flex
+			align-items center
+			max-width 120px
+			height 30px
+			min-height 30px
+			background transparent
+			border-radius 8px
+	&-traders, 
+	&-profit, 
+	&-size, 
+	&-btn,
+	&-rate,
+	&-trade-size
+		width 100%
+	&-table
+		background-color rgba(34, 79, 255, 0.05)
+		max-width 700px
+		width 100%
+		border-radius 20px
+		position relative
+		&__close
+			position absolute
+			width 17px
+			height 17px
+			display flex
+			align-items center
+			justify-content center
+			position relative
+			cursor pointer
+			div
+				position absolute
+				width 100%
+				height 2px
+				background-color rgba(78,98,113,.5)
+				&:first-child
+					transform rotate(45deg)
+				&:last-child
+					transform rotate(-45deg)
+		&--green
+			background-color #f3f6f6
+		&__top
+			padding 30px 40px 15px 40px
+			border-bottom 1px solid rgba(86, 106, 122, 0.1)
+		&__bottom
+			padding 20px 40px
+		&__row
+			display flex
+			align-items center
+			justify-content space-between
+			&:not(:last-child)
+				margin-bottom 10px
+		&__title
+			display flex
+			align-items center
+			justify-content flex-start
+			font-size 25px
+			line-height 30px
+			font-weight 700
+			margin-bottom 10px
+			color $mid-black
+		&__subtitle
+			font-size 15px
+			line-height 20px
+			color $mid-black
+			font-weight 700
+		&__icon
+			margin-right 10px
+			max-width 20px
+			width 100%
+			height 20px
+		&__close
+			width 17px
+			height 17px
+			top 20px
+			right 20px
+			position absolute
+			display flex
+			align-items center
+			justy-content center
+			div
+				width 100%
+	&-info
+		max-width 370px
+		&__item
+			display flex
+			align-items flex-start
+			&:not(:last-of-type)
+				margin-bottom 60px
+		&__title
+			font-size 20px
+			line-height 30px
+			font-weight 600
+			color $mid-black
+			margin-bottom 10px
+		&__text
+			font-size 15px
+			line-height 25px
+			color rgba(0, 38, 65, .5)
+		&__digit
+			max-width 40px
+			width 100%
+			height 40px
+			background-color $blue
+			border-radius 50%
+			display flex
+			align-items center
+			justify-content center
+			color $white
+			font-size 20px
+			line-height 25px
+			font-weight 700
+			margin-right 30px
+			&--green
+				background-color $dark-green
+		&__wrap
+			display flex
+			align-items flex-start
+			flex-direction column
+			
+.extra
+	padding 35px 0 65px
+	background-color $blue
+	border-bottom 1px solid rgba( 255,255,255,.3 )
+	position relative
+	&:before
+		content ''
+		position absolute
+		left -10%
+		top -10%
+		max-width 510px
+		width 100%
+		height 435px
+		background-image url('../img/main/extra-bg.svg')
+		background-repeat no-repeat
+		background-size contain
+		background-position center
+	&--green
+		background-color unset
+		background radial-gradient(47.47% 99.05% at 49.55% 50.08%, #064750 0%, #01212f 100%)
+	&__title
+		margin-bottom 20px
+	&__blocks
+		display flex
+		align-items flex-start
+		justify-content space-between
+		margin-bottom 50px
+	&__item
+		width calc(33% - 15px)
+		display flex
+		flex-direction column
+		align-items center
+		justify-content center
+	&__icon
+		margin-bottom 20px
+		max-height: 68px 
+	&__text
+		text-align center
+		color $white
+		font-weight bold
+		font-size 20px
+		line-height 30px
+		max-width: 370px
+	&__btn
+		display flex
+		align-items center
+		justify-content center
+
+

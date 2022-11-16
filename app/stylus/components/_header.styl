@@ -1,0 +1,208 @@
+.header
+    position absolute
+    top 0
+    left 0
+    width 100%
+    padding 25px 0
+    z-index 10
+    &__wrapper
+        display flex
+        align-items stretch
+        justify-content space-between
+    &__logo
+        margin-right 55px
+    &__btn
+        position relative
+
+.dropdown 
+    cursor pointer
+
+
+
+.btns__lang
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #9BB3B7
+    padding-right 15px
+    margin-right 20px
+    position relative
+    cursor pointer
+    transition: .5s ease
+    &:hover
+        color: #00C396
+    &-list
+        position absolute
+        top: 30px
+        left 0
+        border-radius: 8px
+        background-color: #001013;
+        // display none
+        min-width: 50px
+        padding: 10px 15px 10px 15px
+        &-link
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 25px;
+            color: rgba(255,255,255, .6)
+            &:hover
+                color #fff
+
+
+
+.nav__lang-arrow
+    position relative
+    top: 0
+    right: -5px
+.btns__lang-arrow
+    transition: .5s
+    position relative
+    top -2px
+.nav__lang-arrow path
+    transition: .5s ease
+.btns__lang-arrow path
+    transition: .5s ease
+.btns__lang:hover .btns__lang-arrow > path 
+    fill: #00C396
+.nav__link:hover .nav__lang-arrow > path 
+    fill: #00C396
+        
+
+
+
+
+
+.logo
+    position relative
+    top -3px
+    font-size 25px
+    line-height 25px
+    font-weight 600
+    color $white
+    display: flex
+    align-items: center
+    &--footer
+        font-size 30px
+
+.nav
+    flex-grow 1
+    &__lang-arrow
+        transition: .5s
+    &__list
+        display flex
+        align-items stretch
+        justify-content flex-start
+        height 100%
+    &__item
+        display flex
+        align-items center
+        position relative
+        &:not(:last-of-type)
+            margin-right 48px
+        &-hidden 
+            border-radius: 8px
+            background-color: #001013;
+            padding: 10px 15px 10px 15px
+            min-width: 150px
+            position absolute
+            top 30px
+            left 0
+            // display none
+            &-link
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 25px;
+                color: rgba(255,255,255, 0.6)
+                &:hover
+                    color: #fff
+
+
+    &__link
+        color rgba(255,255,255,.6)
+        font-size 15px
+        line-height 25px
+        font-weight bold
+        height 100%
+        display flex
+        align-items center
+        transition: .5s ease
+        &--white
+            color rgba(255,255,255, 0.6)
+        &:hover
+            color #00C396
+
+.side
+    position fixed
+    background-color $blue
+    box-shadow 0 20px 100px rgba(0,0,0,.3)
+    top 0
+    width 100%
+    height 100%
+    transform translateX(-100%)
+    z-index 90
+    transition all .5s
+    &--green
+        background-color $dark-green
+    &__wrapper
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+        width 100%
+        height 100%
+    &__list
+        display flex
+        align-items center
+        justify-content center
+        flex-direction column
+    &__item
+        &:not(:last-child)
+            margin-bottom 15px
+    &__link
+        color $white
+        font-size 18px
+        line-height 30px
+        font-weight bold
+    &.active
+        transform translateX(0)
+
+.rotate
+    transform: rotate(180deg)
+    path
+        fill: #00C396
+.green
+    color: #00C396
+
+.burger
+    width 30px
+    height 15px
+    display flex
+    align-items center
+    flex-direction column
+    justify-content space-between
+    position relative
+    z-index 99
+    div
+        width 100%
+        height 3px
+        background-color $white
+        position absolute
+        top 0
+        bottom 0
+        margin auto
+        transition $trans
+        &:first-child
+            top -10px
+        &:last-child
+            bottom -10px
+    &.active
+        div
+            &:first-child
+                top 0
+                transform rotate(45deg)
+            &:last-child
+                bottom 0
+                transform rotate(-45deg)
+

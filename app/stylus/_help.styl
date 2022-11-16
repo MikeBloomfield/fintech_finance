@@ -1,0 +1,1997 @@
+.top
+	text-align center
+	padding 110px 0 65px 0
+	background-color #022230
+	background-image radial-gradient(47.47% 99.05% at 49.55% 50.08%, rgb(6, 71, 80) 0%, rgb(1, 33, 47) 100%);
+	&__title
+		color #fff
+		margin-bottom 20px
+	&__desc
+		color rgba(255,255,255,.7)
+		max-width: 770px
+		margin auto
+		font-size 20px
+
+.contest
+	background: radial-gradient(47.47% 99.05% at 29.55% 50.08%, #064750 0%, #01212F 100%);
+
+li
+	list-style-type none
+
+
+.account
+	padding: 65px 0 50px 0
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	color #000
+	position: relative
+	&__abs-pic-1
+		position: absolute
+		top 200px
+		left -540px
+		z-index: -1
+		width: auto;
+		img
+			max-width: initial
+
+	&__abs-pic-2
+		position absolute
+		top -220px
+		right -360px
+		z-index: -1
+		width: auto;
+		img
+			max-width: initial
+
+
+	&__wrapper 
+		display flex
+		justify-content: space-between
+	&__list-item
+		cursor: pointer
+		margin-bottom 30px
+		transition: .3s
+		&:hover
+			color hsl(166, 100%, 25%);
+		&--active
+			color #00C396;
+			&:hover
+				color #00C396;
+		&:not(:last-of-type)
+			margin-bottom 30px
+	&__accordion
+		width: 868px
+		position: relative
+		top -15px
+	&__title
+		color #002641;
+		margin-bottom 26px
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+	
+		
+.collapse 
+	display: none		
+	
+.accordeon
+	counter-reset: myCounter
+	&__title
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color rgba(0,0,0,.7)
+		margin-bottom 25px
+		padding-left 50px
+		cursor: pointer
+		counter-increment: myCounter
+		position: relative
+		&:before
+			content "" counter(myCounter)
+			font-size 15px
+			line-height 30px
+			position: absolute
+			top: 0
+			left: 0
+			border 2px solid #00C396;
+			border-radius: 50px
+			text-align: center
+			width: 35px;
+			height: 35px
+			display flex
+			justify-content: center
+			align-items: center
+			transition: .3s
+		&:hover:before
+			border 2px solid #064750;
+			background-color: #064750
+			color: #fff
+			
+	&__title-active
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color rgba(0,0,0,.7)
+		margin-bottom 25px
+		padding-left 50px
+		cursor: pointer
+		counter-increment: myCounter
+		position: relative
+		&:before
+			content "" counter(myCounter)
+			font-size 15px
+			line-height 30px
+			position: absolute
+			top: 0
+			left: 0
+			border 2px solid #064750;
+			background-color: #064750
+			color #fff
+			border-radius: 50px
+			text-align: center
+			width: 35px;
+			height: 35px
+			display flex
+			justify-content: center
+			align-items: center
+	
+	
+			
+    		
+
+
+	&__item:last-child
+		.accordeon__title
+			margin-bottom 0
+			
+
+
+
+	&__desc
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		margin-top 20px
+		margin-bottom 28px
+	&__desc3
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		margin-top 20px
+		margin-bottom 28px
+		padding-left 50px
+
+.question__wrapper
+	padding 65px 15px
+	text-align: center
+	max-width: 1200px
+	background-color: #f2f6f6
+	margin-top: 65px
+	position: relative
+	border-radius: 20px
+
+
+.question__title
+	font-weight: 600;
+	font-size: 35px;
+	line-height: 45px;
+	color: #002641;
+	margin-bottom 20px
+
+.question__desc
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color rgba(0,0,0, .7)
+
+.question__mail
+	color #00C396
+
+.question__bg-left
+	position: absolute
+	top 10%
+	left 0
+	width 29%
+	
+.question__bg-right
+	position: absolute
+	top 10%
+	right 0
+	width 29%
+
+.referral-pic
+	position relative
+	&__abs-pic-1
+		position: absolute;
+		right: -360px;
+		top: -221px;
+		z-index: -1;
+
+.referral__wrapper-outer
+	max-width: 1407px
+	overflow: hidden
+	margin auto
+	position: relative
+
+
+.referral__main-pic
+	max-width: 68.73%
+	padding 0 10px
+	margin 65px auto 161px
+
+
+.referral__bottom-pic
+	position: absolute
+	z-index -1
+	top 12.5%
+	left 0px
+	max-width 100%
+
+
+.steps
+	position relative
+	margin-bottom 85px
+	&__abs-pic-1
+		position absolute
+		left: -320px;
+		top: -210px;
+		transform: scale(-1, 1);
+
+	&__title
+		margin-bottom 55px
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+
+		color: #002641;
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__item-count
+		text-align: center
+		margin-bottom 10px
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		color: rgba(0, 195, 150, .7)
+	&__desc
+		text-align: center
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 38, 65, .7);
+		max-width: 250px
+	&__item-pic
+		max-width: 230px
+		margin-bottom 25px
+
+
+.work
+	margin-bottom 85px
+	&__title
+		margin-bottom 55px
+		text-align: center
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__pic-wrapper
+		position: relative
+	&__pic
+		max-width: 430px
+		align-content: center
+		margin-right 140px
+	&__pic-decorate
+		max-width: 702px
+		position: absolute
+		top: 0px
+		left -116px
+		z-index: 2
+
+.accordeon
+	&__title2
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 40px;
+		color rgba(0,0,0,.7)
+		margin-bottom 15px
+		padding-left 50px
+		cursor: pointer
+		counter-increment: myCounter
+		position: relative
+		transition: .3s
+		transition-property: color
+		&:before
+			content "" counter(myCounter)
+			font-size 15px
+			line-height 30px
+			position: absolute
+			top: 0
+			left: 0
+			border 2px solid #00C396;
+			background: #fff
+			border-radius: 50px
+			text-align: center
+			width: 35px;
+			height: 35px
+			display flex
+			justify-content: center
+			align-items: center
+		&:hover 
+			color hsl(166, 100%, 25%);
+		&:hover:before
+			color rgba(0, 0, 0, .7)
+			background: #fff
+			border 2px solid #00C396;
+
+			
+	&__title2-active
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 40px;
+		color #00C396;
+		margin-bottom 15px
+		padding-left 50px
+		cursor: pointer
+		counter-increment: myCounter
+		position: relative
+		transition: .3s
+		transition-property: color
+		&:before
+			content "" counter(myCounter)
+			font-size 15px
+			line-height 30px
+			position: absolute
+			top: 0
+			left: 0
+			border 2px solid #00C396;
+			border-radius: 50px
+			text-align: center
+			width: 35px;
+			color rgba(0,0,0,.7)
+			height: 35px
+			display flex
+			justify-content: center
+			align-items: center
+
+		&:hover
+			color #00C396;
+	&__desc2
+		padding-left 50px
+		margin-bottom 24px
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		color: #002641;
+		opacity: 0.7;
+
+.top-ref
+	position relative
+	margin-bottom 100px
+	&__abs-pic-1
+		z-index: -1
+		position absolute
+		top: 50px;
+		right: 40px;
+	&__title
+		margin-bottom 20px
+		text-align: center
+	&__desc
+		font-size: 20px;
+		line-height: 30px;
+		color: #002641;
+		opacity: 0.7;
+		margin-bottom 40px
+		text-align: center
+.table
+	text-align: left
+	border-collapse: separate
+	background-color: #064750
+	border-radius: 20px
+	color: #fff
+	font-size 15px
+	line-height 25px
+	padding: 30px 15px
+	max-width: 770px
+	margin auto
+	&__red
+		color #FD5A58
+	&__green
+		color #00C396
+	&__yellow
+		color #FFB700
+	&__tellow
+	&__wrapper
+		display: flex
+		align-items: center
+	&__pic
+		margin-right 10px
+	tr:nth-child(2n)
+		background-color: #055F5D;
+	.table__data
+		padding: 10px 0
+		vertical-align: middle
+		text-align: center
+	.table__header
+		padding-bottom: 15px
+		text-align: center
+	.table__header:nth-child(2)
+		text-align: left
+		padding-left 20px
+
+	img
+		max-width: 30px
+		font-size 0
+	
+	.table__data:nth-child(1)
+		width: 110px
+	
+	.table__data:nth-child(2)
+		width: 280px
+		padding-left 20px
+
+	.table__data:nth-child(3)
+		width: 125px
+	
+	.table__data:nth-child(4)
+		width: 127px
+	
+	.table__data:nth-child(5)
+		width: 100px
+tr .table__data:first-child
+	border-top-left-radius: 15px
+	border-bottom-left-radius: 15px;
+tr .table__data:last-child
+	border-top-right-radius: 15px
+	border-bottom-right-radius: 15px
+
+.ref-faq
+	margin-bottom 100px
+	position relative
+	&__abs-pic-1 
+		z-index: -1;
+		position: absolute;
+		top: -120px;
+		left: -970px;
+
+	&__wrapper
+		display: flex
+		flex-wrap: wrap
+	&__title
+		max-width: 335px
+		margin-right 65px
+.ref-rev
+	margin-bottom 50px
+	&__title
+		margin-bottom 55px
+		text-align: center
+
+.grid
+	background-color: #E6F3F0;
+	max-width: 1170px
+	padding: 30px
+	display: grid
+	grid-template-columns: 1fr 31.62% 1fr
+	grid-template-rows: 145px 70px 145px
+	border-radius: 20px
+	gap: 30px
+	&__item
+		padding 25px
+		border-radius: 20px
+		background-color: #fff
+	&--1
+		grid-row: 1 / 3
+		grid-column: 1 / 2
+	&--2
+		grid-row: 3 / 4
+		grid-column: 1 / 2
+	&--3
+		grid-row: 1 / 4
+		grid-column: 2 / 3
+	&--4
+		grid-row: 1 / 2
+		grid-column: 3 / 4
+	&--5
+		grid-row: 2 / 4
+		grid-column: 3 / 4
+	&__pic
+		max-width: 55px
+		margin-right 10px
+	&__pic-big
+		max-width: 110px
+		margin-bottom 25px
+	&__name
+		max-width: 140px
+	&__pic-wrapper
+		display: flex
+		margin-bottom 15px
+	&__desc
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 38, 65, .7);
+
+	&__pic-wrapper-center
+		flex-direction: column
+		align-items: center
+		margin-bottom 25px
+	&__desc-center
+		text-align: center
+
+
+.guarantee
+	margin-bottom 50px
+	margin-top 65px
+	position relative
+	&__abs-pic-1
+		position absolute
+		z-index: -1
+		top: 130px;
+		left: -540px;
+	&__abs-pic-2
+		position absolute
+		z-index: -1
+		top: -290px;
+		right: -390px;
+
+	&__title
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+		margin-bottom 50px
+		
+	&__wrapper
+		display flex
+		justify-content: space-between
+		max-width: 940px
+		margin 0 auto 65px
+
+	&-pic
+		max-width: 85px
+		margin auto
+	&-item__title
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color: #002641;
+	&__note 
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 25px;
+		color rgba(0, 38, 65, .7)
+		max-width: 670px
+
+
+
+.table2
+	text-align: center
+	border-collapse: separate
+	background-color: #064750
+	border-radius: 20px
+	color: #fff
+	font-size 15px
+	line-height 25px
+	padding: 30px 30px
+	max-width: 1170px
+	margin 0 auto 30px
+	&__wrapper
+		display flex
+		align-items: center
+	&__header
+		padding-bottom 15px
+		&:first-child
+			text-align: left
+			padding-left 30px
+		&:last-child
+			text-align: right
+			padding-right 20px
+	&__data
+		padding 12px 0 13px 0
+		vertical-align: middle
+		text-align: center
+	&__pic-1
+		width 41px
+		margin-right 15px
+	&__pic-2
+		width 27px
+	&__pic-3
+		width 76px
+	&__pic-4
+		width 99px
+	&__pic-5
+		width 59px
+		margin-right 10px
+	&__pic-6
+		width 57px
+	.table2__data:nth-child(1)
+		width: 184px
+	
+	.table2__data:nth-child(2)
+		width: 280px
+
+	.table2__data:nth-child(3)
+		width: 252px
+	
+	.table2__data:nth-child(4)
+		width: 224px
+	
+	.table2__data:nth-child(5)
+		width: 239px
+	tr:nth-child(2n)
+		background-color: #055F5D;
+tr .table2__data:first-child
+	border-top-left-radius: 15px
+	border-bottom-left-radius: 15px;
+	padding-left 30px
+tr .table2__data:last-child
+	border-top-right-radius: 15px
+	border-bottom-right-radius: 15px
+	padding-left 30px
+
+
+.header--agreement
+		background-image radial-gradient(47.47% 99.05% at 49.55% 50.08%, rgb(6, 71, 80) 0%, rgb(1, 33, 47) 100%);
+		height: 73px
+		counter-reset:Terms	
+		z-index 999
+
+	
+ 
+.agreement
+	margin-top 133px
+	margin-bottom 50px
+	counter-reset: x
+	position relative
+	&__abs-pic-1
+		position absolute
+		left: -540px;
+		top: 380px;
+		z-index -1
+	&__abs-pic-2
+		position absolute
+		right: -390px;
+		top: -30px;
+		z-index -1
+	&__title
+		margin-bottom 20px
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+	&__desc
+		max-width: 770px
+		margin 0 auto 65px
+		&-top
+			margin-bottom 25px
+			text-align center
+		&-bottom
+			text-align center
+	&__terms
+		&-wrapper
+			display flex
+			justify-content: space-between
+			align-items: flex-start
+			counter-increment: x
+			&:not(:last-of-type)
+				margin-bottom 50px
+		&-title
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 40px;
+			color: #002641;
+			padding-left 50px
+			position relative
+			max-width: 370px
+			counter-reset: y
+			counter-increment: Terms
+			&:before
+				content "" counter(Terms)
+				font-size 15px
+				line-height 30px
+				position: absolute
+				top: 3px
+				left: 0
+				border 2px solid #064750;
+				background-color: #064750
+				color #fff
+				border-radius: 50px
+				text-align: center
+				width: 35px;
+		&-list
+			position relative
+			top: 10px
+			max-width: 770px
+			&>li
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 25px;
+				color: rgba(0, 38, 65, .7)
+			&-item:not(:last-of-type)
+				margin-bottom 25px
+			&-item
+				padding-left 40px
+				position: relative
+				counter-increment: y
+				&:before
+					content counter(x)"." counter(y)
+					top: 0
+					left: 0
+					position: absolute
+					font-weight: 600;
+					font-size: 15px;
+					line-height: 25px;
+					text-align: left
+					color: rgba(0, 195, 150, .7)
+			&-item2
+				margin-bottom 25px
+
+
+.account-types
+	margin-top 123px
+	margin-bottom 50px
+	position relative
+	&__abs-pic-1
+		position absolute
+		top: 380px;
+		left: -540px;
+		z-index: -1
+	&__abs-pic-2
+		position absolute
+		top: -40px;
+		right: -390px;
+		z-index: -1
+	&__title
+		text-align center
+		margin-bottom 20px
+	&__desc
+		max-width: 530px
+		text-align: center
+		margin 0 auto 45px
+
+	&__grid
+		display grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px
+		margin-bottom 30px
+		.grid-item-active
+			opacity 1!important
+		&-item
+			min-height: 335px
+			border-radius: 20px
+			transition-property: opacity 
+			transition: .5s
+			&:not(:first-of-type)
+				background-color: #064750
+				opacity .3
+			&:first-of-type
+				background-color: #F2F6F6
+				padding: 30px
+			&-title-1
+				margin-bottom 30px
+				border-top-left-radius: 20px
+				border-top-right-radius: 20px
+				padding: 12px 0 13px
+				font-weight: 600;
+				font-size: 35px;
+				line-height: 45px;
+				text-align: center;
+				color: #064750;
+				background-image: url(../img/common/bronze.jpg)
+				background-size: 100% auto;
+			&-title-2
+				margin-bottom 30px
+				border-top-left-radius: 20px
+				border-top-right-radius: 20px
+				padding: 12px 0 13px
+				font-weight: 600;
+				font-size: 35px;
+				line-height: 45px;
+				text-align: center;
+				color: #064750;
+				background-image: url(../img/common/silver.jpg)
+				background-size: 100% auto;
+			&-title-3
+				margin-bottom 30px
+				border-top-left-radius: 20px
+				border-top-right-radius: 20px
+				padding: 12px 0 13px
+				font-weight: 600;
+				font-size: 35px;
+				line-height: 45px;
+				text-align: center;
+				color: #064750;
+				background-image: url(../img/common/gold.jpg)
+				background-size: 100% auto;
+	&__list-item
+		color rgba(242, 246, 246, .7)
+		padding-left 21px
+		margin-left 30px
+		position relative
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		&:not(&:last-child)
+			margin-bottom 5px
+		&:before
+			content ""
+			position absolute
+			top 7px
+			left 0
+			background-image: url(../img/common/arrow.svg) 
+			width 4px
+			height: 5px
+	&__note
+		color rgba(0, 38, 65, .7)
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+
+
+
+.slider
+	&__main-slider
+		margin-top 25px
+		margin-bottom 35px
+		width: 210px
+	&__label
+		margin-bottom 10px
+		display: block
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		color: rgba(0, 38, 65, .5);
+	&__promo
+		border: 1px dashed rgba(0, 0, 0, 0.2);
+		box-sizing: border-box;
+		border-radius: 8px;
+		background-color #f2f6f6
+		padding 8px 21px 7px 46px
+		width: 210px
+		position relative
+		color: #002641;
+		transition: .5s
+
+		&::placeholder
+			font-style: normal;
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 20px;
+			opacity 1
+			color: #002641;
+			&:focus
+				border: none
+	&__promo-wrapper
+		position: relative
+		&:before
+			content ""
+			z-index 100
+			width 15px
+			height: 15px
+			background-image: url(../img/common/label.svg)
+			position absolute
+			top 10px
+			left 20px
+			transition: .5s
+			opacity: .5
+		&:hover:before
+			opacity 1
+
+			
+	&__pic
+		position relative
+		top -5px
+		&:hover 
+			.slider__pic-tooltip
+				opacity 1
+
+		&-tooltip
+			position absolute
+			padding 10px
+			z-index 3
+			top -20px
+			left 15px
+			width: 150px
+			opacity 0
+			font-weight: 400;
+			font-size: 13px;
+			line-height: 15px;
+			transition: .5s
+			transition-property: opacity
+			margin-left 6px
+			display: block
+			background-color: #00C396;
+			text-align: center
+			border-radius: 10px
+			&:hover
+				text-decoration: underline solid #fff
+			a
+				color: #ffffff
+	&__input
+		background-color: transparent
+		box-shadow: none
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 8px
+		padding 8px 20px 7px
+		width: 210px
+		transition: .5s
+		&:hover
+			box-shadow: 0 0 2px hsl(0, 0%, 20%);
+	&__checkbox-label
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		color: #002641;
+		opacity: 0.5;
+		margin-left 6px
+		position: relative
+		bottom: 5px
+		display: inline-block
+	&__deposit-wrapper
+		display flex
+		justify-content: space-between
+		margin-top 10px
+	&__deposit-total
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		color: #002641;
+		opacity: 0.5;
+	&__deposit-amount
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #002641;
+	&__button
+		display block
+		margin auto
+		border none
+		background-color: #00C396
+		border-radius: 8px
+		padding 5px 72px 5px 73px
+		margin-top 10px
+		transition: .5s
+		&:hover
+			background: hsl(166, 100%, 43%)
+		&-wrapper
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			color: #FFFFFF;
+	&__checkbox
+		position absolute
+		z-index -1
+		opacity 0
+		top: 33px;
+		
+
+		&-wrapper
+			margin-top 15px
+			margin-bottom 15px
+			display flex
+			justify-content: space-between
+			align-items: center
+		&:checked + .fake:before
+			opacity: 1
+.fake
+	display inline-block
+	width 20px
+	height 20px
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	position relative
+	transition: .5s
+	&:hover
+		box-shadow: 0 0 2px hsl(0, 0%, 20%);
+	&:before
+		content ""
+		top -1px
+		left -1px
+		position absolute
+		width: 20px
+		height 20px
+		border-radius: 6px;
+		background-image: url(../img/common/check.svg)
+		opacity 0
+		transition: .2s
+
+
+
+.noUi-target 
+	position: relative;
+	background-color: rgba(0%, 15%, 25%, 0.1);
+	opacity: 1;
+	border-radius: 4px;
+	box-shadow: none
+	border: none
+	height: 5px
+
+
+.noUi-connect
+	background-color: #00C396
+
+
+
+.noUi-handle::before,
+.noUi-handle::after 
+	display none
+
+
+.noUi-horizontal .noUi-handle 
+	box-shadow: none
+	width: 5px;
+	height: 15px;
+	top: -5px;
+	left: 207px
+	background-color: #00C396 
+	opacity 1
+	border: none
+
+.noUi-marker-horizontal.noUi-marker-large 
+	display: none;
+
+
+.noUi-marker-horizontal.noUi-marker 
+	display: none	
+
+
+.noUi-value-horizontal 
+	-webkit-transform: translate(-50%,50%);
+	transform: translate(-50%,-25%);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: center;
+	color: #002641;
+	opacity: 0.3;
+
+
+.noUi-touch-area
+	width: 24px
+	height: 24px
+	position relative
+	top -5px
+	left -10px
+	cursor: pointer
+
+
+.contest
+	padding: 177px 0 130px 0
+	&__title
+		text-align left
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 80px;
+		color: #FFFFFF;
+		margin-bottom 20px
+		&-span
+			color: #00C396
+	&__desc
+		text-align left
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(255,255,255, .7)
+		margin-bottom 40px
+		max-width: 450px
+	&__button
+		background radial-gradient(50% 105.3% at 50% 50%, #00dba8 0%, #0b8965 100%)
+		box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.16), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.115017), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.08), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0449833);
+		border-radius: 8px;
+		border: none
+		color: #fff
+		transition: .3s
+		max-width: 266px
+		position relative
+		padding: 10px 50px 10px 50px
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		color: #FFFFFF;
+		display flex
+		justify-content: center
+		&:before
+			background radial-gradient(50% 105.3% at 50% 50%, #00C396 0%, #097254 100%)
+			content "Free registration"
+			position absolute
+			top 0 
+			left 0 
+			right 0
+			bottom 0
+			border-radius: 8px
+			display flex
+			align-items: center
+			justify-content: center
+			opacity 1
+			transition: .3s
+			z-index 3
+			color: #fff
+			
+		&:hover:before
+			opacity: 0
+			color: #fff
+		&:hover
+			color: #fff
+		
+
+	&__container
+		display flex
+		justify-content: space-between
+	&__right
+		position relative
+		width: 50%
+	&__pic
+		width: 594px
+		position absolute
+		top: -40px
+		left: -10px
+
+.leaders
+	position relative
+	padding: 95px 0 175px
+	&__title
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+		margin-bottom 20px
+	&__time
+		display block
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		color: rgba(0, 38, 65, .7)
+		margin-bottom 40px
+	&__abs-pic-1
+		position absolute
+		top -118px
+		left -540px
+		z-index: -1
+	&__abs-pic-2
+		position absolute
+		top 50px
+		right -400px
+		z-index: -1
+		transform: scale(-1, 1)
+
+.contest-faq
+	padding-bottom 60px
+	position relative
+	&__wrapper
+		display flex
+		justify-content: left
+	&__title
+		position relative
+		top -10px
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		color: #002641;
+		max-width: 335px
+	&__abs-pic-1
+		position absolute
+		top -150px
+		left -390px
+		z-index -1
+
+.accordeon__desc4
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	margin-top: 10px;
+	margin-bottom: 28px;
+	padding-left: 50px;
+	max-width: 720px
+
+
+.policy
+	padding: 133px 0 50px
+	counter-reset policy
+	position relative
+	&__title
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+		margin-bottom 20px
+	&__desc
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+		color: rgba(0, 38, 65, .7)
+		max-width: 720px
+		margin auto
+		margin-bottom 65px
+	&__terms
+		max-width: 1130px
+	&__item
+		counter-increment: policy
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 38, 65, .7)
+		padding-left 40px
+		position relative
+		&:not(:last-child)
+			margin-bottom 25px
+		&:before
+			content counter(policy) "." 
+			position absolute
+			left 0
+			top 0
+			color: #17C8A0
+	&__abs-pic-1
+		position absolute
+		z-index -1
+		top 520px
+		left -540px
+		
+	&__abs-pic-2
+		position absolute
+		z-index -1
+		top 90px
+		right -390px
+
+.risk
+	padding 133px 0 50px
+	position relative
+	counter-reset: execute
+	&__list-item-number
+		counter-increment: execute
+		color: rgba(0, 38, 65, .7)
+		margin-bottom 20px
+		padding-left 40px
+		margin-top 20px
+		position relative
+		&:before
+			content: "5." counter(execute)
+			position absolute
+			left 0
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 25px;
+			color: rgba(0, 195, 150, .7)
+	&__span
+		font-weight: 600
+		color: rgba(0, 38, 65, .7)
+
+
+	&__terms-wrapper
+		max-width: 770px
+	&__abs-pic-1
+		z-index -1
+		top 480px
+		left -540px
+		position absolute
+	&__abs-pic-2
+		z-index -1
+		top 80px
+		right -390px
+		position absolute
+	&__wrapper
+		max-width: 900px
+		margin 0 auto 65px
+	&__title
+		margin-bottom 20px
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+	&__desc
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+		color: #002641;
+		&:not(:last-child)
+			margin-bottom 25px
+	&__list-item
+		max-width: 770px
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 38, 65, .7)
+	&__terms-title
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 40px;
+		color: #002641;
+		padding-left 50px
+		position relative
+		max-width: 370px
+		counter-reset: y
+		counter-increment: Terms
+		top -5px
+		&:before
+			content "" counter(Terms)
+			font-size 15px
+			line-height 30px
+			position: absolute
+			top: 3px
+			left: 0
+			border 2px solid #064750;
+			background-color: #064750
+			color #fff
+			border-radius: 50px
+			text-align: center
+			width: 35px;
+
+			
+.contact
+	padding 133px 0 60px
+	counter-reset: contact
+	&__desc
+		margin-top 10px
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		color: #002641;
+		opacity: 0.7;
+		margin-bottom 30px
+	&__left
+		width: 50%
+	&__right
+		background: #E6F3F0;
+		border-radius: 20px;
+		width: 50%
+		padding: 50px
+	&__title
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 45px;
+		text-align: center;
+		color: #002641;
+		margin-bottom 115px
+	&__wrapper
+		display flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__subtitle
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 40px;
+		color: #002641;
+	&__list
+		margin-top 20px
+		display flex
+		flex-wrap: wrap
+		&-item
+			counter-increment: contact
+			width: 50%
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 25px;
+			color:rgba(0, 38, 65, .7)
+			margin-bottom 30px
+			padding-left 50px
+			position relative
+			&:before
+				content  "" counter(contact)
+				color #fff
+				top 5px
+				left 0
+				position absolute
+				width: 35px
+				height: 35px
+				display flex
+				align-items: center
+				justify-content: center
+				background-color: #064750
+				border-radius: 50px
+				font-weight: 500;
+				font-size: 15px;
+				line-height: 30px;
+
+	&__phone
+		color:rgba(0, 38, 65, .7)
+		outline: none
+		transition: .5s
+		&:hover
+			color: #4DD5B5
+	&__place
+		color:rgba(0, 38, 65, .7)
+	&__input
+		background-color: #E6F3F0
+		border: 1px solid #B8C2C0;
+		box-sizing: border-box;
+		// filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		border-radius: 40px;
+		padding: 8px 20px 7px 20px
+		&:focus
+			border: 1px solid #B8C2C0
+			outline: none
+		&::placeholder
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 20px;
+			color: #002641;
+	&__textarea
+		background-color: #E6F3F0
+		resize: none
+		border-radius: 20px
+		border: 1px solid #B8C2C0;
+		box-sizing: border-box;
+		overflow: hidden
+		// filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		width: 480px
+		height: 110px
+		padding: 8px 20px 7px 20px
+		margin-bottom 20px
+		transition: .3s
+		&::placeholder
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 20px;
+			color: #002641;
+		&:hover
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+		&:focus
+			border: 1px solid #B8C2C0;
+			outline: none
+	&__button
+		background-color #00C396
+		padding: 5px 93px
+		border: none
+		border-radius: 20px
+		color: #fff
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+		transition: .5s
+		&:hover
+			background: hsl(166, 100%, 43%)
+	&__wrapper
+		display flex
+		justify-content: space-between
+	&__right
+		position relative
+		bottom 50px
+	&__pic
+		max-width: 1120px
+.name
+	min-width: 480px
+	margin-bottom 20px
+	transition: .3s
+	&:hover
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+
+
+.mail, .tel
+	width 225px
+	margin-bottom 20px
+	transition: .3s
+	&:hover
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+.mail 
+	margin-right 20px
+
+
+.giveaway
+	position relative
+	background: #022230
+	&-main 
+		background: radial-gradient(47.47% 99.05% at 29.55% 50.08%, #064750 0%, #01212F 100%);
+		max-width: 1440px
+		margin: auto
+		position relative
+	&__pic-1
+		max-width: 62,66%
+		position absolute
+		top 0
+		left 0
+		z-index: 2
+
+	&__pic-2
+		max-width: 100%
+		position absolute
+		top 0
+		left 0
+		z-index: 1
+	&__wrapper-outer
+		position relative
+		max-width: 1920px
+		margin: auto
+		padding-top: 200px
+
+.prize
+	padding-bottom 130px
+	&__amount
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 25px;
+		align-items: center;
+		text-align: center;
+		color: #FFFFFF;
+		position absolute
+		background: url(../img/common/giveaway-card-bottom.svg) 100% 100%
+		bottom 0
+		width: 100%
+		z-index 10
+		padding: 12px 0 13px
+	&__title
+		padding-top 520px
+		font-weight: bold;
+		font-size: 68px;
+		line-height: 80px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-bottom 20px
+		position relative
+		z-index 2
+	&__desc
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 770px
+		margin: auto
+		margin-bottom 60px
+		position relative
+		z-index 2
+	&__wrapper
+		display flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		width: 270px
+		&-price
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			margin-bottom 40px
+			text-transform: capitalize;
+			color: #00C396;
+		&-deposit
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			text-transform: capitalize;
+			color: #FFFFFF;
+		&-title
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 25px;
+			text-align: center;
+			color: #00C396;
+			&-span
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 25px;
+				text-align: center;
+				color: #FFFFFF;
+
+		&-wrapper
+			border-top-left-radius: 15px
+			border-top-right-radius: 15px
+			min-height: 365px
+			padding: 25px 0
+			display flex
+			flex-direction: column
+			align-items: center
+			position relative
+			z-index 2
+			&:before
+				content ""
+				top 0 
+				left 0
+				width: 100%
+				height: 100%
+				position absolute
+				z-index -1
+				background-image: url(../img/common/giveaway-card-top.svg)
+				opacity: .2
+		&-pic-1
+			max-width: 146px
+			margin auto
+		&-pic-2
+			max-width: 103px
+			margin auto
+		&-pic-3
+			max-width: 120px
+			margin auto
+		&-pic-4
+			max-width: 164px
+			margin auto
+		
+
+.enter
+	&__wrapper
+		position relative
+		padding-top: 130px
+		padding-bottom 700px
+		z-index 0
+		
+	&__pic-1
+		position absolute
+		top: 220px
+		left 0
+	&__pic-2
+		position absolute
+		top: 30px
+		right 0px
+
+	&__title
+		position relative
+		counter-reset: enter
+		font-weight: bold;
+		font-size: 68px;
+		line-height: 80px;
+		text-align: center;
+		color: #FFFFFF;
+		max-width: 550px
+		margin: auto
+		margin-bottom 60px
+		position relative
+		z-index: 1
+	&__desc
+		counter-increment: enter
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 30px;
+		color: #FFFFFF;
+		max-width: 520px
+		margin auto
+		padding-left 61px
+		position relative
+		z-index 1
+		&:before
+			content "" counter(enter)
+			display flex
+			justify-content: center
+			align-items: center
+			width: 40px
+			color: #000
+			background-color: #fff
+			height: 40px
+			position absolute
+			top 0
+			left 0
+			border-radius: 50px
+		&:not(:last-of-type)
+			margin-bottom 40px
+		&:last-of-type
+			margin-bottom: 60px
+		&-span
+			color: #00C396
+	&__button
+		padding: 22px 84px 18px
+		border-radius: 8px
+		margin: auto
+		border: none
+		color: #fff
+		transition: .3s
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 40px;
+		text-align: center;
+		display block
+		position relative
+		z-index 2
+		background radial-gradient(50% 105.3% at 50% 50%, #00dba8 0%, #0b8965 100%)
+		position relative
+		color: #fff
+		z-index: 1
+		max-width: 360px
+		box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.16), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.115017), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0953772), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.08), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0646228), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0449833);
+		&-span
+			position relative
+			bottom:2px
+		&:before
+			background radial-gradient(50% 105.3% at 50% 50%, #00C396 0%, #097254 100%)
+			content "Enter the giveaway"
+			position absolute
+			top 0 
+			left 0 
+			right 0
+			bottom 0
+			border-radius: 8px
+			display flex
+			align-items: center
+			justify-content: center
+			opacity 1
+			transition: .3s
+			z-index 3
+			color: #fff
+		&:hover:before
+			opacity: 0
+			color: #fff
+		&:hover
+			color: #fff
+.desktop
+	&-pic
+		max-width: 100%
+		z-index -1
+	&-wrapper
+		max-width: 1920px
+		margin: auto
+		position absolute
+		bottom 0
+
+.popup
+	display none
+	&__forgot
+		display block
+		text-align center
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #002641;
+		margin-top 30px
+		margin-bottom 10px
+		transition: .3s
+		&:hover
+			color: hsl(205, 100%, 28%);
+	&__register
+		text-align center
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: rgba(0, 38, 65, .5);
+		&-link
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 20px;
+			color: #002641;
+			transition: .3s
+			&:hover
+				color: hsl(205, 100%, 28%);
+	padding: 40px
+	border-radius: 8px
+	background-color: #fff
+	width: 770px
+	&__wrapper-name
+		display flex
+		justify-content: space-between
+	&__wrapper-name1
+		display flex
+		justify-content: left
+		margin-bottom 20px
+
+		&:last-of-type
+			margin-top 20px
+			align-items: flex-end
+	&__prefix
+		max-width: 160px
+		color: #002641;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		margin-right 15px
+		margin-bottom 20px
+		&:placeholder
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 20px;
+			color: #002641;
+			
+	&__mail
+		width: 690px
+		margin-bottom 20px
+	&__code
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 20px;
+		color: #002641;
+		cursor pointer
+		transition: .3s
+		&:hover
+			color: hsl(205, 100%, 28%);
+
+	&__number
+		width: 510px
+		margin-bottom 20px
+	&__link
+		color: #00C396;
+		font-weight 700
+	&__name
+		margin-right 15px
+	&__name, &__surname
+		width: 335px
+		margin-bottom 20px
+	&__password, &__currency
+		width: 335px
+	&__button
+		background: #00C396;
+		border-radius: 8px;
+		padding: 5px 57px 5px 57px
+		border: none
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 25px;
+		text-align: center;
+		color: #FFFFFF;
+		transition: .3s
+		display block
+		margin-left: auto
+		&:hover
+			background: hsl(166, 100%, 43%)
+	&__password2, &__mail2
+		width: 370px
+		margin-bottom 20px
+		transition: .3s
+		&:hover
+			box-shadow: 0 0 2px rgba(0, 0, 0, .7)
+
+	&__hidden-code
+		width: 690px
+		display none
+		margin-top 20px
+	&__title
+		font-weight: 600;
+		font-size: 25px;
+		line-height: 40px;
+		color: #002641;
+		text-align center
+		margin-bottom 25px
+
+    input
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 8px;
+		padding: 8px 15px 7px
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 20px;
+		color: #002641;
+        &::placeholder
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 20px;
+			color: #002641;
+
+	&__checkbox
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		color: #002641;
+		top 0
+	label
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 20px;
+		color: #002641;
+
+.fake2
+	display inline-block
+	width 20px
+	height 20px
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	position relative
+	top 27px
+	left 0
+	transition: .3s
+	&:hover
+		box-shadow: 0 0 2px #000
+	&:before
+		content ""
+		top -1px
+		left -1px
+		position absolute
+		width: 20px
+		height 20px
+		border-radius: 6px;
+		background-image: url(../img/common/check.svg)
+		opacity 0
+		transition: .2s
+
+.slider__checkbox:checked + .fake2:before
+		opacity: 1
+
+.checkbox2__span, .checkbox3__span
+	padding-left 35px
+	max-width: 300px
+	font-weight 500
+	display block
+	font-size: 13px;
+	line-height: 20px;
+	color: #002641;
+
+
+.checkbox2, .checkbox3
+	position relative
+
+
+.checkbox2
+	display inline-block
+	margin-right 60px
+
+.ui.selection.dropdown
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 8px 15px 7px
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	color: #002641;
+	width: 335px
+
+
+.ui.selection.visible.dropdown>.text:not(.default)
+	font-weight 300
+
+
+.popup2
+	width 450px
+
+
+.fake3
+	display inline-block
+	width 20px
+	height 20px
+	border-radius: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	position relative
+	top 5px
+	left 0
+	transition: .3s
+	&:hover
+		box-shadow: 0 0 2px #000
+	&:before
+		content ""
+		top -1px
+		left -1px
+		position absolute
+		width: 20px
+		height 20px
+		border-radius: 6px;
+		background-image: url(../img/common/check.svg)
+		opacity 0
+		transition: .2s
+
+.slider__checkbox:checked + .fake3:before
+		opacity: 1
+.checkbox4__span
+	padding-left 10px
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+	color: #002641;
+
+.fancybox__content>.carousel__button.is-close 
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	color: #808080;
+	box-shadow: none
+	transition: .3s
+	svg
+		filter: none
+	&:hover
+		color: hsl(0, 0%, 35%);
+		
+
+
+
+
+.fancybox__carousel.is-draggable .fancybox__slide, .fancybox__carousel.is-draggable .fancybox__slide .fancybox__content 
+	cursor: default
+
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close)
+	outline:none
+

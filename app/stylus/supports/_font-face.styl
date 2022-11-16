@@ -1,0 +1,22 @@
+m-font-face( $font-family = "Arial", $file-path = "", $local-name = "", $weight, $style = normal) {
+	@font-face {
+		font-family: $font-family;
+		src: url($file-path + '.eot');
+		src: local($local-name),
+			 url($file-path + '.eot?#iefix') format('embedded-opentype'),
+			 url($file-path + '.woff2') format('woff2'),
+			 url($file-path + '.woff') format('woff'),
+			 url($file-path + '.ttf') format('truetype');
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+	}
+}
+
+
+m-font-face("Gilroy", "../fonts/Gilroy/Gilroy-Light", "Gilroy-Light", 300);
+m-font-face("Gilroy", "../fonts/Gilroy/Gilroy-Regular", "Gilroy-Regular", normal);
+m-font-face("Gilroy", "../fonts/Gilroy/Gilroy-SemiBold", "Gilroy-SemiBold", 600);
+m-font-face("Gilroy", "../fonts/Gilroy/Gilroy-Medium", "Gilroy-Medium", 500);
+m-font-face("Gilroy", "../fonts/Gilroy/Gilroy-Bold", "Gilroy-Bold", 700);
+

@@ -1,0 +1,832 @@
+/*==========  Desktop First  ==========*/
+
+// /* Large Devices, Wide Screens */
+// @media (max-width : 1200px)
+// /* Medium Devices, Desktops */
+// @media (max-width : 992px)
+// /* Small Devices, Tablets */
+// @media (max-width : 768px)
+// /* Small Devices, Tablets */
+// @media (max-width : 568px)
+// /* Small Devices, Tablets */
+// @media (max-width : 480px)
+// /* Custom, iPhone Retina */
+// @media (max-width : 380px)
+/**/
+
+@media (min-width 1920px)
+    .intro
+        &-device
+            &--desktop
+                right 0%
+
+@media (max-width 1300px)
+    .intro
+        &-device
+            &--desktop
+                max-width 700px
+                bottom -13%
+            &--mobile
+                max-width 300px
+                bottom 2%
+
+@media (max-width 1140px)
+    .intro
+        &-device
+            &--desktop
+                max-width 600px
+                bottom -23%
+            &--mobile
+                max-width 250px
+                bottom -5%
+
+@media (min-width 1024px)
+    .burger
+        display none
+
+@media (max-width 1024px)
+    .extra__text
+        br
+            display none
+    .name
+        min-width: 410px
+    .contact__textarea, .mail, .tel
+        width: 410px
+    .prize__wrapper
+        width: 570px;
+        margin: auto;
+    .enter__wrapper
+        padding-top: 50px;
+        padding-bottom: 470px;
+    .btns__lang
+        display none
+    .contest__button
+        margin: auto
+    .contest
+        padding: 177px 0 430px 0;
+    .contest__left
+        margin-bottom 50px
+    .contest__pic
+        top 0
+        left 0
+        img
+            max-width: 80%
+
+    .contest__container
+        flex-direction: column
+        align-items: center
+    .prize__title
+        padding-top 320px
+    .prize__item
+        margin-bottom 30px
+    .footer__menu
+        min-width: auto
+    .grid__desc
+        font-size 13px
+
+    .referral__main-pic
+        margin-bottom 108px
+  
+
+    .agreement__terms-list
+        width: 690px  
+    
+    .agreement__terms-title
+        width: 320px
+        padding-right 20px
+
+    .header
+        &__nav
+            display none
+
+
+    .question__wrapper
+        padding: 35px 15px
+    .logo
+        &--footer
+            margin-bottom 32px
+    .intro
+        padding 135px 0 0
+        &__title
+            text-align center
+        &__layer
+            max-width 100%
+            display flex
+            flex-direction column
+            align-items center
+            justify-content center
+            margin-bottom 32px
+            p
+                text-align center
+        &-device
+            &--desktop, &--mobile
+                height auto
+            &--desktop
+                position relative
+                margin auto
+                top unset
+                right unset
+                bottom unset
+                left unset
+            &--mobile
+                left -50%
+                bottom 10%
+    .exp
+        &__wrapper
+            flex-direction column
+            align-items center
+            justify-content center
+        &-table
+            margin-bottom 32px
+
+    .footer
+
+        &__nav
+            margin-bottom 32px
+            &:before, &:after
+                display none
+            ul
+                flex-direction column
+                li
+                    margin-right 0 !important
+                    a
+                        display block
+                        text-align center
+                        width 100%
+                    &:not(:last-child)
+                        margin-bottom 15px
+        &__copyright
+            margin-top 50px
+    .socials
+        flex-direction column
+        &__item
+            margin-right 0 !important
+            &:not(:last-child)
+                margin-bottom 15px
+            
+
+@media (max-width 956px)
+    .how
+        &__line
+            top 42%
+
+@media (max-width 916px)
+    .how
+        &__line
+            max-width 600px
+
+@media (max-width 768px)
+    .popup__hidden-code
+        width 620px
+    .popup__button
+        margin-right: 10px
+    .checkbox4
+        display block
+        margin-left 30px
+    .popup__wrapper
+        width: 335px
+        margin: auto
+    .popup
+        width: 700px
+    .popup2
+        width:450px
+    .popup__mail
+        width: 620px
+
+    .popup__password2, .popup__mail2
+        width: 340px
+
+    .name
+        min-width: 100%
+    .contact__textarea, .mail, .tel
+        width: 100%
+
+    .risk__terms-title
+        margin-right 40px
+
+    .giveaway__pic-1
+        top 70px    
+    .giveaway__wrapper-outer
+        padding-top 200px
+    .prize__title
+        font-size 48px
+        padding-top 300px
+    .enter__title
+        font-size 48px
+
+    .contest__button
+        margin: auto
+    .contest
+        padding: 177px 0 320px 0;
+    .contest__left
+        margin-bottom 50px
+    .contest__pic
+        top 0
+        left 0
+        img
+            max-width: 60%
+    .agreement__abs-pic-2 
+        position: absolute;
+        right: -540px;
+        top: 20px;
+        z-index: -1;
+    
+
+    .account-types__abs-pic-1
+        display none
+    .account-types__abs-pic-2
+        display none
+
+    .referral-pic__abs-pic-1
+        right: -440px;
+
+    .account__abs-pic-1
+        left -610px
+
+    .account__abs-pic-2
+        right -450px
+    .ref-faq__abs-pic-1
+        left -600px
+
+    .slider__label
+        text-align center
+
+    .account-types__grid
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+    
+    .slider__promo-wrapper:before
+        left: 65px
+
+    .noUi-target
+        display: block;
+        margin: 15px auto 35px;
+    .slider__input, .slider__promo
+        display block
+        margin auto
+    .grid__pic-big
+        margin-bottom 0
+
+    .ref-faq__title
+        margin-bottom 30px
+    .work__pic
+        left -70px
+        margin-right 50px
+    .work__pic-decorate
+        right -5px
+
+    .work__wrapper
+        flex-direction: column
+        align-items: center
+
+
+    .ref-faq__wrapper
+        flex-direction: column
+
+    .ref-faq__title
+        align-self: center
+    .ref-faq__accordion
+        align-self: left
+        max-width: 500px
+        margin-left 180px
+
+    .grid
+        background-color: #E6F3F0;
+        margin: auto
+        width: 400px
+        padding: 15px
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: repeat(5, auto)
+        border-radius: 20px
+        gap: 15px
+        &__item
+            padding 15px
+            border-radius: 20px
+            background-color: #fff
+        &--1
+            grid-row: 1 / 2
+            grid-column: 1 / 2
+        &--2
+            grid-row: 2 / 3
+            grid-column: 1 / 2
+        &--3
+            grid-row: 3 / 4
+            grid-column: 1 / 2
+        &--4
+            grid-row: 4 / 5
+            grid-column: 1 / 2
+        &--5
+            grid-row: 5 / 6
+            grid-column: 1 / 2
+        .grid__pic-big
+            max-width: 55px
+        .grid__pic-wrapper-center
+            flex-direction: row
+        .grid__desc-center
+            text-align: left
+        
+
+    .question__desc
+        font-size 16px
+
+    .question__wrapper
+        padding: 35px 15px
+
+    .account__wrapper
+        flex-wrap: wrap
+
+    .account__list
+        align-items: center
+        display: block
+        margin auto
+    
+    .account__accordion
+        padding-left 50px
+
+        
+    .account__list
+        padding-right: 50px
+        padding-left: 20px;
+
+
+    .question__title
+        font-size 25px
+    .extra
+        &__item
+            width calc(33% - 20px)
+    .exp
+        &-table
+            overflow-x scroll
+            &__inner
+                width 650px
+            &__top
+                padding 15px
+            &__bottom
+                padding 15px
+    .how
+        &__line
+            max-width 500px
+    h1 
+        font-size 40px
+    .top__desc
+        font-size 18px
+
+
+    .guarantee__title
+        font-size 25px
+
+    .guarantee__item
+        margin-bottom 30px
+
+
+
+    .guarantee-item__title
+        text-align: center
+        padding: 2 em
+
+
+
+
+@media (max-width 668px)
+
+    .slider__pic-tooltip
+        padding: 5px;
+        z-index: 3;
+        top: -10px;
+        left: -120px;
+        
+
+    .btns__item.btn
+        margin-right 10px
+    .header__logo
+        img
+            max-width: 90%
+    .btns__item
+        margin-right 0
+    .guarantee__wrapper
+        flex-direction: column
+        margin-bottom 25px
+
+    .footer__wrapper
+        flex-wrap: wrap
+        
+    .footer__menu
+        width: 50%
+        margin-bottom 30px
+
+    .table2__header
+        font-size 13px
+
+    .footer__wrapper
+        margin-bottom 25px
+        
+
+
+
+@media (min-width 568px)
+    .platform
+        &__img
+            .mobile
+                display none
+        
+
+        
+
+@media (max-width 568px)
+
+
+    .steps__abs-pic-1
+        top -130px
+
+    .top-ref__abs-pic-1
+        display: none
+
+    .account-types__grid
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 15px;
+    .slider__promo-wrapper:before
+        left: 80px
+
+    .work__accordion
+        margin-bottom 30px
+
+    .work__pic
+        margin-right 0
+    .table .table__data:nth-child(2)
+        padding-left 0
+    .table .table__header
+        padding-right 5px
+    .agreement__terms-wrapper
+        flex-wrap: wrap
+    .agreement__terms-title
+        margin-bottom 15px
+    .agreement__terms-list
+        margin-left 50px
+    .question__wrapper
+        padding: 35px 15px
+    .question__title
+        font-size 18px
+    .question__desc
+        font-size 14px
+    .how
+        &__items
+            flex-direction column
+            align-items center
+            justify-content center
+        &-item
+            width 100%
+            &:not(:last-child)
+                margin-bottom 32px
+        &__line
+            display none
+    .table2
+        padding: 2px
+        font-size 12px
+
+
+    .extra
+        &__blocks
+            flex-direction column
+            align-items center
+            justify-content center
+        &__item
+            width 100%
+            &:not(:last-child)
+                margin-bottom 32px
+    .platform
+        &__img
+            .desktop
+                display none
+    .tooltip
+        &__icon
+            width 30px
+            height 30px
+            img
+                width 100%
+            &:before
+                width 34px
+                height 34px
+        &--1,
+        &--2,
+        &--3,
+        &--4
+            display none
+        &--5,
+        &--6,
+        &--7
+            bottom 9%
+        &--5
+            left 15%
+        &--6
+            left 45%
+
+
+@media (max-width 468px)
+    .popup__mail
+        width: 310px
+    .popup__hidden-code
+        width: 310px
+    .popup__password
+        margin-bottom 20px
+    .popup__wrapper-name
+        flex-wrap: wrap
+
+    .popup__button
+        margin-right: 0
+    .checkbox4
+        margin-left 0
+    .popup__wrapper
+        width: 335px
+        margin: auto
+    .popup
+        width: 390px
+
+    .popup2
+        width:390px
+
+
+    .popup__password2, .popup__mail2
+        width: 330px
+    .contact__list-item
+        width: 100%
+    .contact__desc
+        text-align center
+    .contact__title
+        margin-bottom 35px
+    .contact__subtitle
+        text-align center
+    .contact__left
+        margin-bottom 50px
+    .contact__button
+        display block
+        margin: auto
+    .contact__wrapper
+        flex-direction: column
+    .contact__left, .contact__right
+        width: 100%
+    .btn--small 
+        min-height: 35px;
+        min-width: 60px;
+        padding: 5px 20px;
+        font-size: 15px;
+        line-height: 25px;
+
+    .header__logo.logo
+        display flex
+        justify-content: space-between
+        align-items: center
+    .btn--small.btn
+        padding: 5px 10px
+    .risk__terms-title
+        margin-bottom 10px
+    .policy
+        padding: 113px 0 50px;
+        &__desc
+            margin-bottom 35px
+    .enter__title
+        line-height 50px
+        font-size 38px
+    .giveaway__pic-1
+        top 70px    
+    .giveaway__pic-2
+        top 70px    
+    .giveaway__wrapper-outer
+        padding-top 100px
+    .prize__title
+        line-height 50px
+        font-size 38px
+        padding-top 200px
+
+    .enter__wrapper
+        padding-bottom 230px
+    .contest 
+        padding: 177px 0 220px 0;
+
+    .prize__wrapper 
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+
+    .contest__title
+        text-align center
+    .contest__desc
+        text-align center
+    .account__abs-pic-2
+        right: -600px
+
+    .contest-faq__wrapper
+        flex-direction: column
+    .contest-faq__title
+        margin-bottom 30px
+        text-align center
+    .table
+        font-size 13px
+        line-height 15px
+
+    .table .table__header:nth-child(2)
+        padding-right 40px
+
+    .grid
+        width: 300px
+    .referral__main-pic
+        max-width: 100%
+        margin-bottom 50px
+    .contest__pic img
+        max-width: 35%
+
+
+    .ref-faq__wrapper
+        flex-direction: column
+    .referral__bottom-pic
+        display: none
+
+    .grid__pic-wrapper-center
+        margin-bottom 0
+    .ref-faq__title
+        align-self: center
+        text-align: center
+        margin-right 0
+    .ref-faq__accordion
+        margin-left 0
+        align-self: left
+    .table-wrapper2
+        overflow-x: scroll
+    .work__pic-decorate
+        left: -18px
+    .steps__item:not(:last-child)
+        margin-bottom 20px
+
+    .steps__wrapper
+        flex-direction: column
+        align-items: center
+    .account__list
+        margin-bottom 50px
+    .question__bg-left
+        top 35%
+    .question__bg-right
+        top 35%
+    h1
+        font-size 40px
+        line-height 60px
+    h2
+        font-size 25px
+        line-height 35px
+    .logo
+        font-size 20px
+    .header
+        &__logo
+            margin-right 0
+    .btns
+        &__item
+            padding 5px
+            &:last-child
+                margin-right 5px
+    .intro
+        &-device
+            margin unset
+            left 2%
+            bottom 5%
+            &--mobile
+                max-width 200px
+    .tooltip
+        &__text
+            width 355px
+            font-size 20px
+            line-height 30px
+            padding 10px 15px 25px
+        &--5,
+        &--6,
+        &--7
+            z-index unset
+        &--5
+            .tooltip__text
+                left -40px
+        &--6
+            .tooltip__text
+                left -158px
+        &--7
+            .tooltip__text
+                left -285px
+
+@media (max-width 414px)
+    .table .table__header:nth-child(2)
+        padding-left 10px
+    .table__wrapper
+         justify-content: space-around
+    .table .table__data
+        font-size 11px
+    .contest__pic img 
+        max-width: 31%;
+    .tooltip
+        &__text
+            width 345px
+
+    .table-wrapper
+        overflow-x: scroll
+
+@media (max-width 375px)
+    .checkbox2__span, .checkbox3__span
+        padding-left 0
+        padding-top 25px
+    .popup__button
+        padding: 5px 47px 5px 48px
+    .popup__password2, .popup__mail2
+        width: 270px
+    .popup__button
+        margin-right: 0
+    .checkbox4
+        margin-left 0
+    .popup__wrapper
+        width: 335px
+        margin: auto
+    .popup__mail, .popup__hidden-code
+        width: 260px
+    .popup
+        width: 340px
+    .popup2
+        width: 340px
+
+    .risk__terms-title
+        font-size 22px
+
+    .slider__promo-wrapper:before
+        left: 60px
+    .guarantee-item__title
+        padding 1em
+    .guarantee
+        margin-bottom 20px
+    .table2__header
+        padding-right 3px
+
+    .guarantee__note
+        font-size 13px
+
+    .tooltip
+        &__text
+            width 320px
+        &--6
+            .tooltip__text
+                left -142px
+        &--7
+            .tooltip__text
+                left -250px
+
+@media (max-width 320px)
+    .popup__mail, .popup__hidden-code
+        width: 220px
+    .checkbox4__span
+        padding-left 0
+    .popup__button
+        padding: 5px 27px 5px 28px
+    .popup__password2, .popup__mail2
+        width: 230px
+    .popup__password, .popup__mail
+        width: 230px
+    .popup__button
+        margin-right: 0
+    .checkbox4
+        margin-left 0
+    .popup__wrapper
+        width: 335px
+        margin: auto
+    .popup
+        width: 300px
+    .popup2
+        width:300px
+    .contact__button
+        padding: 5px 63px
+    .contest
+        padding: 127px 0 180px 0;
+    .contest__pic img
+        max-width: 25%
+    .enter__button
+        padding: 22px 44px 18px;
+    .footer__menu
+        width: 100%
+    .footer__title, .footer__menu-item
+        text-align center
+    .slider__promo-wrapper:before
+        left 30px
+    .footer__img-wrapper
+        justify-content: center
+    .tooltip
+        &__text
+            width 275px
+            font-size 16px
+            line-height 26px
+        &--6
+            .tooltip__text
+                left -142px
+        &--7
+            .tooltip__text
+                left -210px
+        &--6
+            .tooltip__text
+                left -123px
+        &--5
+            .tooltip__text
+                left -35px
